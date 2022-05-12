@@ -15,6 +15,6 @@ streamlit.header('🍌🥭 Crea tus batidos de frutas 🥝🍇')
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 my_fruit_list = my_fruit_list.set_index('Fruit')
 # Se coloca una seleccion de la lista de frutas
-streamlit.multiselect("Selecciona tus frutas favoritas :", list(my_fruit_list.index),['Avocado','Strawberries'])
+streamlit.multiselect("Selecciona tus frutas favoritas :", list(my_fruit_list.index),['Avocado','Strawberries','Banana'])
 # despliega la tabla en la pagina
 streamlit.dataframe(my_fruit_list)
