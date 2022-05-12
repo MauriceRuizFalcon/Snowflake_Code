@@ -1,5 +1,7 @@
 import streamlit
 streamlit.title('Restaurante Mayimba')
-streamlit.title('Menú del desayuno')
-streamlit.text('Café')
-
+streamlit.header('Menú del desayuno')
+streamlit.text('Café de olla')
+streamlit.text('Huevos rancheros')
+streamlit.text('Pan')
+streamlit.text('Tortillas')
