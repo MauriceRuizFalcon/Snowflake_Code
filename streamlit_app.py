@@ -22,7 +22,7 @@ streamlit.dataframe(fruits_to_show)
 
 #New section to display fruity vice api response
 streamlit.header('Fruityvice Fruit Advice!')
-fruit_choice = streamlit.text_input('De que fruta te interesa información?' + 'Kiwi')
+fruit_choice = streamlit.text_input('De que fruta te interesa información? ' + 'Kiwi')
 streamlit.write('El usuario escogio', fruit_choice)
 
 import requests
