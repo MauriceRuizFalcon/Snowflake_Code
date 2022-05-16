@@ -2,9 +2,6 @@ import streamlit
 import pandas
 streamlit.title('Restaurante Mayimba')
 streamlit.header('MENÚ DESAYUNO')
-#inicio de linea de texto de prueba
-streamlit.title('Cafe de olla')
-#fin de linea de texto de prueba
 streamlit.text('Cafe de olla')
 streamlit.text('Huevos rancheros')
 streamlit.text('🍞 Pan')
@@ -22,3 +19,7 @@ fruits_selected = streamlit.multiselect("Selecciona tus frutas favoritas :", lis
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 # despliega la tabla en la pagina
 streamlit.dataframe(fruits_to_show)
+#New section to display fruity vice api response
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
