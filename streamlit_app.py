@@ -2,7 +2,7 @@ import streamlit
 import pandas
 streamlit.title('Restaurante Mayimba')
 streamlit.header('MENÚ DESAYUNO')
-streamlit.text('Café de olla')
+streamlit.text('Cafe de olla')
 streamlit.text('Huevos rancheros')
 streamlit.text('🍞 Pan')
 streamlit.text('Pan de dulce')
