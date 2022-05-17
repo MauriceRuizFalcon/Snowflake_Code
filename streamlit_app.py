@@ -45,3 +45,6 @@ streamlit.dataframe(my_data_rows)
 # Allow the enduser to add a fruit to the list
 add_my_fruit = streamlit.text_input('Que fruta quieres añadir? ')
 streamlit.write('Gracias por añadir --->   ', add_my_fruit) 
+
+#codigo temporal
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
